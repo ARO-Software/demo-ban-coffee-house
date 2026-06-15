@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-label="BAN Coffee House crest">
+  <defs>
+    <style>
+      .crest-stroke { fill:none; stroke:currentColor; stroke-width:2.4; }
+      .crest-fill { fill:currentColor; }
+      .crest-thin { fill:none; stroke:currentColor; stroke-width:1.4; }
+    </style>
+  </defs>
+  <!-- Shield outline -->
+  <path class="crest-stroke" d="M30 34 H170 V120 C170 168 130 196 100 206 C70 196 30 168 30 120 Z"/>
+  <!-- Inner shield line -->
+  <path class="crest-thin" d="M40 44 H160 V118 C160 160 126 184 100 193 C74 184 40 160 40 118 Z"/>
+  <!-- Top banner with EST -->
+  <path class="crest-thin" d="M52 30 H148 M52 30 L46 22 H154 L148 30"/>
+  <text x="100" y="27" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="2" class="crest-fill">EST · AMMAN</text>
+  <!-- BAN wordmark -->
+  <text x="100" y="92" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="44" letter-spacing="3" class="crest-fill">BAN</text>
+  <!-- Divider with diamonds -->
+  <line class="crest-thin" x1="58" y1="104" x2="142" y2="104"/>
+  <path class="crest-fill" d="M100 100 l5 4 -5 4 -5 -4 Z"/>
+  <!-- Coffee cup with steam (Scottish thistle-like steam curls) -->
+  <path class="crest-thin" d="M88 128 c-3 -8 3 -12 0 -18 M100 126 c-3 -9 4 -13 0 -20 M112 128 c-3 -8 3 -12 0 -18"/>
+  <path class="crest-stroke" d="M78 138 H122 L118 162 C116 172 108 178 100 178 C92 178 84 172 82 162 Z"/>
+  <path class="crest-thin" d="M122 144 c12 0 12 16 0 16"/>
+  <line class="crest-thin" x1="74" y1="138" x2="126" y2="138"/>
+  <!-- Coffee house caption -->
+  <text x="100" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" letter-spacing="4" class="crest-fill">COFFEE HOUSE</text>
+</svg>
