@@ -5,16 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BAN Coffee House — Specialty Coffee &amp; Croissants · Um Uthaina, Amman</title>
 <meta name="description" content="BAN Coffee House — a Scottish-inspired coffee house in Um Uthaina, Amman. Specialty coffee, fresh croissants and bakery, every day.">
+<meta name="theme-color" content="#1f3a2e">
 <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
 <!-- ====== NAV ====== -->
-<header class="nav" id="top">
+<header class="nav" id="top" data-nav>
   <a class="nav__brand" href="#top" aria-label="BAN Coffee House home">
     <img src="./assets/logo.svg" alt="BAN Coffee House crest" width="40" height="44">
     <span class="nav__name">BAN <em>Coffee House</em></span>
@@ -31,6 +32,9 @@
 <!-- ====== HERO ====== -->
 <section class="hero">
   <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__noise" aria-hidden="true"></div>
+  <p class="hero__rail hero__rail--l" aria-hidden="true">EST · UM UTHAINA · AMMAN</p>
+  <p class="hero__rail hero__rail--r" aria-hidden="true">SPECIALTY COFFEE · FRESH BAKERY</p>
   <div class="hero__inner">
     <div class="hero__copy">
       <img class="hero__crest" src="./assets/logo.svg" alt="BAN Coffee House crest" width="96" height="106">
@@ -43,6 +47,7 @@
       </div>
     </div>
     <figure class="hero__photo">
+      <span class="hero__photo-frame" aria-hidden="true"></span>
       <img src="./assets/photo-1.jpg" alt="BAN Coffee House — coffee and pastries" width="720" height="960" fetchpriority="high">
       <figcaption>Open daily · poured fresh</figcaption>
     </figure>
@@ -53,10 +58,10 @@
 <!-- ====== ABOUT ====== -->
 <section class="about" id="about">
   <div class="about__grid">
-    <div class="about__text">
+    <div class="about__text" data-reveal>
       <p class="eyebrow">The house</p>
       <h2>Highland hospitality,<br>poured the Amman way.</h2>
-      <p>BAN Coffee House borrows its soul from the old Scottish coffee houses — those snug, wood-warmed rooms where conversation lingers and nobody hurries you out the door. We've carried that feeling to Um Uthaina, set just opposite the Ministry of Transport, beside Sayf.</p>
+      <p class="about__drop">BAN Coffee House borrows its soul from the old Scottish coffee houses — those snug, wood-warmed rooms where conversation lingers and nobody hurries you out the door. We've carried that feeling to Um Uthaina, set just opposite the Ministry of Transport, beside Sayf.</p>
       <p>The coffee is specialty through and through: beans dialled in daily, espresso pulled with care, filter brewed bright and clean. Alongside it, a counter of fresh-baked croissants and bakery — flaky, buttery, made for dunking. It's become a quiet favourite in the neighbourhood, and we'd love for it to become one of yours.</p>
       <ul class="about__marks">
         <li><strong>Specialty</strong><span>Coffee</span></li>
@@ -64,22 +69,23 @@
         <li><strong>Daily</strong><span>Bakery</span></li>
       </ul>
     </div>
-    <figure class="about__photo">
+    <figure class="about__photo" data-reveal data-reveal-delay="120">
       <img src="./assets/photo-2.jpg" alt="Inside BAN Coffee House" width="791" height="960" loading="lazy">
-      <span class="about__stamp">Open<br>Daily</span>
+      <span class="about__stamp" aria-hidden="true">Open<br>Daily</span>
     </figure>
   </div>
 </section>
 
 <!-- ====== MENU ====== -->
 <section class="menu" id="menu">
-  <div class="menu__head">
+  <div class="menu__bg" aria-hidden="true"></div>
+  <div class="menu__head" data-reveal>
     <p class="eyebrow">From the counter</p>
     <h2>The Menu</h2>
     <p class="menu__note">A taste of what's poured and baked. Ask the barista — there's always something new on the board.</p>
   </div>
   <div class="menu__cols">
-    <div class="menu__card">
+    <div class="menu__card" data-reveal>
       <h3>Espresso &amp; Filter</h3>
       <ul>
         <li><span>Espresso</span><i></i></li>
@@ -90,7 +96,7 @@
         <li><span>V60 Pour-Over</span><i></i></li>
       </ul>
     </div>
-    <div class="menu__card">
+    <div class="menu__card" data-reveal data-reveal-delay="60">
       <h3>Signature Coffee</h3>
       <ul>
         <li><span>The Highlander Latte</span><i></i></li>
@@ -100,7 +106,7 @@
         <li><span>Vanilla Cream Latte</span><i></i></li>
       </ul>
     </div>
-    <div class="menu__card">
+    <div class="menu__card" data-reveal data-reveal-delay="120">
       <h3>Croissants &amp; Pastries</h3>
       <ul>
         <li><span>Classic Butter Croissant</span><i></i></li>
@@ -110,7 +116,7 @@
         <li><span>Za'atar &amp; Cheese Roll</span><i></i></li>
       </ul>
     </div>
-    <div class="menu__card">
+    <div class="menu__card" data-reveal>
       <h3>Bakery</h3>
       <ul>
         <li><span>Cinnamon Roll</span><i></i></li>
@@ -120,7 +126,7 @@
         <li><span>Daily Cheesecake</span><i></i></li>
       </ul>
     </div>
-    <div class="menu__card">
+    <div class="menu__card" data-reveal data-reveal-delay="60">
       <h3>Cold Drinks</h3>
       <ul>
         <li><span>Iced Latte</span><i></i></li>
@@ -130,7 +136,7 @@
         <li><span>Fresh Lemonade &amp; Mint</span><i></i></li>
       </ul>
     </div>
-    <div class="menu__card menu__card--note">
+    <div class="menu__card menu__card--note" data-reveal data-reveal-delay="120">
       <h3>A quiet word</h3>
       <p>Everything is made fresh through the day. Seasonal specials and single-origin guest coffees rotate on the board — pop in and ask what's on.</p>
       <a class="link-arrow" href="https://wa.me/962799090336?text=Hi%20BAN%20Coffee%20House%2C%20what%27s%20on%20the%20board%20today%3F" target="_blank" rel="noopener">Ask today's specials →</a>
@@ -140,22 +146,22 @@
 
 <!-- ====== GALLERY ====== -->
 <section class="gallery" id="gallery">
-  <div class="gallery__head">
+  <div class="gallery__head" data-reveal>
     <p class="eyebrow">The view from here</p>
     <h2>A look inside</h2>
   </div>
   <div class="gallery__grid">
-    <figure class="g g--tall"><img src="./assets/photo-3.jpg" alt="BAN Coffee House detail" width="540" height="960" loading="lazy"></figure>
-    <figure class="g"><img src="./assets/photo-1.jpg" alt="Coffee at BAN" width="720" height="960" loading="lazy"></figure>
-    <figure class="g"><img src="./assets/photo-2.jpg" alt="BAN Coffee House interior" width="791" height="960" loading="lazy"></figure>
-    <figure class="g g--tall"><img src="./assets/photo-4.jpg" alt="Pastries at BAN" width="540" height="960" loading="lazy"></figure>
+    <figure class="g g--tall" data-reveal data-parallax><img src="./assets/photo-3.jpg" alt="BAN Coffee House detail" width="540" height="960" loading="lazy"></figure>
+    <figure class="g" data-reveal data-reveal-delay="80" data-parallax><img src="./assets/photo-1.jpg" alt="Coffee at BAN" width="720" height="960" loading="lazy"></figure>
+    <figure class="g" data-reveal data-reveal-delay="160" data-parallax><img src="./assets/photo-2.jpg" alt="BAN Coffee House interior" width="791" height="960" loading="lazy"></figure>
+    <figure class="g g--tall" data-reveal data-reveal-delay="240" data-parallax><img src="./assets/photo-4.jpg" alt="Pastries at BAN" width="540" height="960" loading="lazy"></figure>
   </div>
 </section>
 
 <!-- ====== VISIT ====== -->
 <section class="visit" id="visit">
   <div class="visit__grid">
-    <div class="visit__info">
+    <div class="visit__info" data-reveal>
       <p class="eyebrow">Hours &amp; location</p>
       <h2>Come find us.</h2>
       <div class="visit__block">
@@ -175,7 +181,7 @@
         <a class="btn btn--ghost" href="https://maps.google.com/maps?q=31.9656679,35.8775884&z=16" target="_blank" rel="noopener">Open in Maps</a>
       </div>
     </div>
-    <div class="visit__map">
+    <div class="visit__map" data-reveal data-reveal-delay="120">
       <iframe src="https://maps.google.com/maps?q=31.9656679,35.8775884&z=16&output=embed" title="BAN Coffee House location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
@@ -203,5 +209,6 @@
   <p class="footer__credit">Demo by ARO Solutions</p>
 </footer>
 
+<script src="./script.js" defer></script>
 </body>
 </html>
